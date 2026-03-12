@@ -8,6 +8,8 @@
   justify-self: center;
   margin-top: 2em;
   padding-bottom: 90px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 .News > .CardImage > img {
   width: 100%;
@@ -18,16 +20,17 @@
 }
 .TextSection > .Headline > h3 {
   text-wrap: wrap;
-  font-size: 1.5em;
+  font-size: var(--heading-scale);
   font-family: "Times New Roman", Times, serif;
   padding: 0px 10px 10px 10px;
 }
 .TextSection > .NewsDescription {
+  font-family: "Times New Roman", Times, serif;
   padding: 10px;
 }
 .TextSection > .NewsDescription > p {
   text-wrap: wrap;
-  font-size: 1em;
+  font-size: var(--description-scale);
 }
 .TextSection > a {
   background-color: rgba(255, 255, 255, 0.432);

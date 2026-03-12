@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 :root {
+  --heading-scale: 1.5em;
+  --description-scale: 1em;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -33,5 +36,19 @@ body {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media (min-width: 673px) {
+  :root {
+    --heading-scale: 2em;
+    --description-scale: 1.5em;
+  }
+  .NewsComponent {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    /* padding: 0px 25% 0px 25%; */
   }
 }

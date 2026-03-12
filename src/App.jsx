@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState(null);
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=2f155cbbc91844099627db3c1725b3ed",
+      `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=2f155cbbc91844099627db3c1725b3ed`,
     )
       .then((res) => res.json())
       .then((data) => {
@@ -14,7 +14,7 @@ function App() {
       });
   }, []);
   return (
-    <>
+    <div className="NewsComponent">
       {!data ? (
         <div className="LoadingScreen">Loading..</div>
       ) : (
@@ -28,7 +28,7 @@ function App() {
           />
         ))
       )}
-    </>
+    </div>
   );
 }
 
