@@ -1,0 +1,42 @@
+.News {
+  width: 90%;
+  height: fit-content;
+  background-color: hsla(0, 0%, 100%, 0.151);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 2em;
+  padding-bottom: 90px;
+}
+.News > .CardImage > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.TextSection {
+  position: relative;
+}
+.TextSection > .Headline > h3 {
+  text-wrap: wrap;
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0px 10px 10px 10px;
+}
+.TextSection > .NewsDescription {
+  padding: 10px;
+}
+.TextSection > .NewsDescription > p {
+  text-wrap: wrap;
+  font-size: 1em;
+}
+.TextSection > a {
+  background-color: rgba(255, 255, 255, 0.432);
+  font-size: large;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.808);
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
