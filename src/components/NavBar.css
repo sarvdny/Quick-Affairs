@@ -1,0 +1,9 @@
+.navBar {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  padding: 20px 0 20px 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(var(--heading-scale) + 0.5em);
+  justify-content: center;
+}

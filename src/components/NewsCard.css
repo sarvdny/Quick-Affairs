@@ -1,6 +1,8 @@
 .News {
   width: 90%;
+  max-width: 600px;
   height: fit-content;
+  /* min-height: 900px; */
   background-color: hsla(0, 0%, 100%, 0.151);
   border-radius: 20px;
   display: flex;
@@ -42,4 +44,53 @@
   cursor: pointer;
   position: absolute;
   right: 20px;
+}
+@media (min-width: 673px) {
+  .News {
+    width: 90%;
+    max-width: 600px;
+    height: fit-content;
+    /* min-height: 900px; */
+    background-color: hsla(0, 0%, 100%, 0.151);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 2em;
+    padding-bottom: 90px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .News > .CardImage > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .TextSection {
+    position: relative;
+  }
+  .TextSection > .Headline > h3 {
+    text-wrap: wrap;
+    font-size: var(--heading-scale);
+    font-family: "Times New Roman", Times, serif;
+    padding: 0px 10px 10px 10px;
+  }
+  .TextSection > .NewsDescription {
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px;
+  }
+  .TextSection > .NewsDescription > p {
+    text-wrap: wrap;
+    font-size: var(--description-scale);
+  }
+  .TextSection > a {
+    background-color: rgba(255, 255, 255, 0.432);
+    font-size: large;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.808);
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
 }

@@ -20,12 +20,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body {
+/* body {
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: auto;
-}
+} */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -44,11 +44,15 @@ body {
     --description-scale: 1.5em;
   }
   .NewsComponent {
-    width: 65%;
+    /* width: 65%; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
     margin: auto;
     justify-content: center;
+    row-gap: auto;
+
     /* padding: 0px 25% 0px 25%; */
   }
 }
