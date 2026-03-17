@@ -1,6 +1,7 @@
 .navBar {
+  color: var(--heading);
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   padding: 20px 0 20px 0;
   font-family: "Times New Roman", Times, serif;

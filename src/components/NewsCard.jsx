@@ -1,30 +1,32 @@
-import "./NewsCard.css";
+import { Link } from "react-router-dom";
+import styles from "./NewsCard.module.css";
+// import { useState } from "react";
 function NewsCard(props) {
-  return (
-    <>
-      <div className="News">
-        <div className="CardImage">
-          <img src={props.ImageURL} alt="Banner" />
-        </div>
+  // const [imgUrl, setImgUrl] = useState("https://placehold.co/600x400/png");
 
-        <div className="TextSection">
-          <div className="Headline">
-            <h3 className="HeadlineText">{props.Headline}</h3>
-          </div>
-          <div className="NewsDescription">
-            <p className="Description">{props.NewsDescription}</p>
-          </div>
-          <a
-            href={props.urlToNews}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ContinueBtn"
-          >
-            {"Continue Readings >"}
-          </a>
+  return (
+    <div className={styles.News}>
+      <div className={styles.CardImage}>
+        <img className={styles.img} src={props.ImageURL} alt="Banner" />
+      </div>
+
+      <div className={styles.TextSection}>
+        <div className={styles.Headline}>
+          <h3 className={styles.HeadlineText}>{props.Headline}</h3>
+        </div>
+        <div className={styles.NewsDescription}>
+          <p className={styles.Description}>{props.NewsDescription}</p>
+        </div>
+        <div
+          href={props.urlToNews}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.ContinueBtn}
+        >
+          {"Continue Readings >"}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default NewsCard;

@@ -3,24 +3,25 @@
   max-width: 600px;
   height: fit-content;
   /* min-height: 900px; */
-  background-color: hsla(0, 0%, 100%, 0.151);
+  background-color: var(--card-color);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-top: 2em;
+  /* margin-top: 2em; */
   padding-bottom: 90px;
-  margin: auto;
-  margin-bottom: 40px;
+  /* margin: auto; */
+  /* margin-bottom: 40px; */
 }
-.News > .CardImage > img {
+.News > .CardImage > .img {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 .TextSection {
   position: relative;
 }
-.TextSection > .Headline > h3 {
+.TextSection > .Headline > .HeadlineText {
+  color: var(--title);
   text-wrap: wrap;
   font-size: var(--heading-scale);
   font-family: "Times New Roman", Times, serif;
@@ -30,12 +31,13 @@
   font-family: "Times New Roman", Times, serif;
   padding: 10px;
 }
-.TextSection > .NewsDescription > p {
+.TextSection > .NewsDescription > .Description {
   text-wrap: wrap;
   font-size: var(--description-scale);
+  color: var(--color);
 }
-.TextSection > a {
-  background-color: rgba(255, 255, 255, 0.432);
+.TextSection > .ContinueBtn {
+  background-color: var(--color);
   font-size: large;
   text-decoration: none;
   padding: 20px;
@@ -48,27 +50,29 @@
 @media (min-width: 673px) {
   .News {
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
     height: fit-content;
     /* min-height: 900px; */
-    background-color: hsla(0, 0%, 100%, 0.151);
+    /* background-color: hsla(0, 0%, 100%, 0.151); */
+    background-color: var(--card-color);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-self: center;
     margin-top: 2em;
     padding-bottom: 90px;
-    margin: auto;
-    margin-bottom: 30px;
+    /* margin: auto; */
+    /* margin-bottom: 30px; */
   }
-  .News > .CardImage > img {
+  .News > .CardImage > .img {
     width: 100%;
     border-radius: 20px 20px 0 0;
   }
   .TextSection {
     position: relative;
   }
-  .TextSection > .Headline > h3 {
+  .TextSection > .Headline > .HeadlineText {
+    color: var(--title);
     text-wrap: wrap;
     font-size: var(--heading-scale);
     font-family: "Times New Roman", Times, serif;
@@ -82,12 +86,13 @@
     text-wrap: wrap;
     font-size: var(--description-scale);
   }
-  .TextSection > a {
+  .TextSection > .ContinueBtn {
     background-color: rgba(255, 255, 255, 0.432);
     font-size: large;
     text-decoration: none;
     padding: 20px;
     border-radius: 15px;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.808);
     cursor: pointer;
     position: absolute;
