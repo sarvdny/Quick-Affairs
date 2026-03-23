@@ -1,4 +1,4 @@
-import styles from "./Newspage.module.css";
+import styles from "./NewsPage.module.css";
 import { useParams } from "react-router-dom";
 
 import { useState, useEffect } from "react";
