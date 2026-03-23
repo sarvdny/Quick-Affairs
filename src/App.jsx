@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import NewsCard from "./components/NewsCard";
 import Navbar from "./components/NavBar";
 import { Link } from "react-router-dom";
+import Footer from "./components/Footer.jsx";
 export const URL = "/apis/newdata.json";
 function App() {
   const [data, setData] = useState(null);
@@ -37,6 +38,7 @@ function App() {
           ))
         )}
       </div>
+      <Footer />
     </>
   );
 }
