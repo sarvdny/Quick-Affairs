@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import NewsCard from "./components/NewsCard";
 import Navbar from "./components/NavBar";
 import { Link } from "react-router-dom";
-export const URL = import.meta.env.API_URL;
+export const URL = "/apis/newdata.json";
 function App() {
   const [data, setData] = useState(null);
   useEffect(() => {
