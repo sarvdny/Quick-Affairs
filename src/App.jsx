@@ -3,7 +3,8 @@ import styles from "./App.module.css";
 import NewsCard from "./components/NewsCard";
 import Navbar from "./components/NavBar";
 import { Link } from "react-router-dom";
-export const URL = "/apis/newdata.json";
+export const URL =
+  "https://api.currentsapi.services/v1/latest-news?apiKey=*********************************eMqKD";
 function App() {
   const [data, setData] = useState(null);
   useEffect(() => {
